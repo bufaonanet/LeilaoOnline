@@ -1,7 +1,7 @@
-﻿using Alura.LeilaoOnline.WebApp.Models;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Alura.LeilaoOnline.WebApp.Models;
 
 namespace Alura.LeilaoOnline.WebApp.Dados.EFCore
 {
@@ -9,14 +9,9 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EFCore
     {
         public readonly AppDbContext _context;
 
-        public LeilaoDaoComEFCore()
+        public LeilaoDaoComEFCore(AppDbContext context)
         {
-            _context = new AppDbContext();
-        }
-
-        public IList<Categoria> GetCategorias()
-        {
-            return _context.Categorias.ToList();
+            _context = context;
         }
 
         public IList<Leilao> GetLeiloes()

@@ -5,7 +5,7 @@ namespace Alura.LeilaoOnline.WebApp.Dados
 {
     public interface ILeilaoDao
     {
-        public IList<Categoria> GetCategorias();
+        
         public IList<Leilao> GetLeiloes();
         public IList<Leilao> GetLeiloesByTermo(string termo);
         public Leilao GetLeilaoById(int id);
