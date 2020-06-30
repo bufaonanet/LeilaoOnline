@@ -21,13 +21,13 @@ namespace Alura.LeilaoOnline.WebApp.Services.Handles
 
         public Categoria ConsultaCategoriaPorIdComLeiloesEmPregao(int id)
         {
-            return _categoriaDao.GetCategoriasById(id);
+            return _categoriaDao.BuscarPorId(id);
         }
 
         public IEnumerable<CategoriaComInfoLeilao> ConsultaCategoriasComTotalDeLeiloesEmPregao()
         {
             return _categoriaDao
-                .GetCategorias()
+                .BuscarTodos()
                 .Select(c => new CategoriaComInfoLeilao
                 {
                     Id = c.Id,
@@ -42,7 +42,7 @@ namespace Alura.LeilaoOnline.WebApp.Services.Handles
         public IEnumerable<Leilao> PesquisaLeiloesEmPregaoPorTermo(string termo)
         {
             var termoNormalized = termo.ToUpper();
-            return _leilaoDao.GetLeiloes()
+            return _leilaoDao.BuscarTodos()
                 .Where(c =>
                     c.Titulo.ToUpper().Contains(termoNormalized) ||
                     c.Descricao.ToUpper().Contains(termoNormalized) ||

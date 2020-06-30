@@ -13,8 +13,7 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EFCore
         {
             _context = context;
         }
-
-        public IList<Categoria> GetCategorias()
+        public IList<Categoria> BuscarTodos()
         {
             return _context
                 .Categorias
@@ -22,7 +21,7 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EFCore
                 .ToList();
         }
 
-        public Categoria GetCategoriasById(int id)
+        public Categoria BuscarPorId(int id)
         {
             return _context.Categorias
                 .Include(c => c.Leiloes)

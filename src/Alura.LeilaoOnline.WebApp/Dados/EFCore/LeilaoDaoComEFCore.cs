@@ -14,14 +14,35 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EFCore
             _context = context;
         }
 
-        public IList<Leilao> GetLeiloes()
+        public IList<Leilao> BuscarTodos()
         {
-            return _context.Leiloes
-                .Include(l => l.Categoria)
-                .ToList();
+            return _context.Leiloes.Include(l => l.Categoria).ToList();
         }
 
-        public IList<Leilao> GetLeiloesByTermo(string termo)
+        public Leilao BuscarPorId(int id)
+        {
+            return _context.Leiloes.FirstOrDefault(l => l.Id == id);
+        }
+
+        public void Incluir(Leilao obj)
+        {
+            _context.Leiloes.Add(obj);
+            _context.SaveChanges();
+        }
+
+        public void Alterar(Leilao obj)
+        {
+            _context.Leiloes.Update(obj);
+            _context.SaveChanges();
+        }
+
+        public void Excluir(Leilao obj)
+        {
+            _context.Leiloes.Remove(obj);
+            _context.SaveChanges();
+        }
+
+        public IList<Leilao> BuscarTodosPeloTermo(string termo)
         {
             var leiloes = _context.Leiloes
                 .Include(l => l.Categoria)
@@ -32,29 +53,6 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EFCore
                 );
 
             return leiloes.ToList();
-        }
-
-        public Leilao GetLeilaoById(int id)
-        {
-            return _context.Leiloes.FirstOrDefault(l => l.Id == id);
-        }
-
-        public void Insert(Leilao leilao)
-        {
-            _context.Leiloes.Add(leilao);
-            _context.SaveChanges();
-        }
-
-        public void Update(Leilao leilao)
-        {
-            _context.Leiloes.Update(leilao);
-            _context.SaveChanges();
-        }
-
-        public void Delete(Leilao leilao)
-        {
-            _context.Leiloes.Remove(leilao);
-            _context.SaveChanges();
         }
     }
 }

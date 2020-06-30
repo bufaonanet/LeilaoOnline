@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Alura.LeilaoOnline.WebApp.Dados
 {
-    public interface ICategoriaDao
+    public interface ICategoriaDao : IQuery<Categoria>
     {
-        public IList<Categoria> GetCategorias();
-        Categoria GetCategoriasById(int id);
+
     }
 }
