@@ -251,8 +251,6 @@ D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\bin\Debug\netcoreapp3.
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.csprojAssemblyReference.cache
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.AssemblyInfoInputs.cache
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.AssemblyInfo.cs
-D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.csproj.CoreCompileInputs.cache
-D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.MvcApplicationPartsAssemblyInfo.cache
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.RazorAssemblyInfo.cache
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.RazorAssemblyInfo.cs
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.TagHelpers.input.cache
@@ -280,3 +278,5 @@ D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.dll
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.pdb
 D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.genruntimeconfig.cache
+D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.csproj.CoreCompileInputs.cache
+D:\Alura\SOLID\LeilaoOnline\src\Alura.LeilaoOnline.WebApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.WebApp.MvcApplicationPartsAssemblyInfo.cache

@@ -25,6 +25,9 @@ namespace Alura.LeilaoOnline.WebApp
                 {
                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 });
+
+            //adicionando o middleware para o serviço de compressão
+            services.AddResponseCompression();
         }
 
         public void Configure(IApplicationBuilder app)
@@ -34,12 +37,15 @@ namespace Alura.LeilaoOnline.WebApp
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseResponseCompression();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }
